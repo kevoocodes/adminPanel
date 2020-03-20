@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav">
                     <li class="nav-item px-2">
-                        <a href="index.htm" class="nav-link active">Dashboard</a>
+                        <a href="index.htm" class="nav-link">Dashboard</a>
                     </li>
 
                     <li class="nav-item px-2">
@@ -32,7 +32,7 @@
                     </li>
 
                     <li class="nav-item px-2">
-                        <a href="Users.htm" class="nav-link">Users</a>
+                        <a href="Users.htm" class="nav-link active">Users</a>
                     </li>
                 </ul>
 
@@ -66,11 +66,11 @@
 
     <!-- HEADER -->
 
-    <header id="main-header" class="py-2 bg-primary text-white">
+    <header id="main-header" class="py-2 bg-warning text-white">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h1><i class="fas fa-cog"></i>  Dashboard</h1>
+                    <h1><i class="fas fa-users"></i>Users</h1>
                 </div>
             </div>
         </div>
@@ -78,61 +78,51 @@
 
 
 
-    <!-- ACTION -->
+    <!-- SEARCH -->
 
-    <section id="actions" class="py-4 mb-4 bg-light">
+    <section id="search" class="py-4 mb-4 bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <a href="" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addPostModal">
-                        <i class="fas fa-plus"></i>Add Post
-                    </a>
-                </div>
-
-                <div class="col-md-3">
-                    <a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#addCategoryModal">
-                        <i class="fas fa-plus"></i>Add Category
-                    </a>
-                </div>
-                
-
-                <div class="col-md-3">
-                    <a href="" class="btn btn-warning btn-block" data-toggle="modal" data-target="#addUserModal">
-                        <i class="fas fa-plus"></i>Add User
-                    </a>
+                <div class="col-md-6 ml-auto">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search Users....">
+                        <div class="input-group-append">
+                            <button class="btn btn-warning">Search</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- POSTS -->
-    <section id="posts">
+    <!-- Users -->
+    <section id="users">
         <div class="container">
             <div class="row">
-                <div class="col-md-9">
+                <div class="col">
                     <div class="card">
                       <div class="card-header">
-                          <h4>Latest Posts</h4>
+                          <h4>Latest Users</h4>
                       </div>
 
                       <table class="table table-striped">
                           <thead class="thead-dark">
                               <tr>
                                   <th>#</th>
-                                  <th>Title</th>
-                                  <th>Categories</th>
-                                  <th>Date Posted</th>
+                                  <th>Name</th>
+                                  <th>Email</th>
+                            
                                   <th></th>
                               </tr>
-                          </thead>
+                          </thead>   
                           <tbody>
                               <tr>
                                   <td>1</td>
-                                  <td>Post One</td>
-                                  <td>Web Development</td>
-                                  <td>May 10 2018</td>
+                                  <td>Kelvin Aron</td>
+                                  <td>kevoo@example.com</td>
+                
                                   <td>
-                                      <a href="details.htm" class="btn btn-secondary">
+                                      <a href="datails.htm" class="btn btn-secondary">
                                           <i class="fas fa-angle-double-right"></i>Details
                                       </a>
                                   </td>
@@ -140,11 +130,11 @@
 
                               <tr>
                                 <td>2</td>
-                                <td>Post Two</td>
-                                <td>Tech Gargets</td>
-                                <td>May 10 2018</td>
+                                <td>Goodluck Emmanueli</td>
+                                <td>good@example.com</td>
+                            
                                 <td>
-                                    <a href="details.htm" class="btn btn-secondary">
+                                    <a href="datails.htm" class="btn btn-secondary">
                                         <i class="fas fa-angle-double-right"></i>Details
                                     </a>
                                 </td>
@@ -152,88 +142,27 @@
 
                             <tr>
                                 <td>3</td>
-                                <td>Post Three</td>
-                                <td>Web Development</td>
-                                <td>May 13 2018</td>
+                                <td>Grory Emmanueli</td>
+                                <td>grory@example.com</td>
+                            
                                 <td>
-                                    <a href="details.htm" class="btn btn-secondary">
+                                    <a href="datails.htm" class="btn btn-secondary">
                                         <i class="fas fa-angle-double-right"></i>Details
                                     </a>
                                 </td>
                             </tr>
 
-                            <tr>
-                                <td>4</td>
-                                <td>Post Four</td>
-                                <td>Bussnes</td>
-                                <td>May 15 2018</td>
-                                <td>
-                                    <a href="details.htm" class="btn btn-secondary">
-                                        <i class="fas fa-angle-double-right"></i>Details
-                                    </a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>5</td>
-                                <td>Post Five</td>
-                                <td>Web Development</td>
-                                <td>May 17 2018</td>
-                                <td>
-                                    <a href="details.htm" class="btn btn-secondary">
-                                        <i class="fas fa-angle-double-right"></i>Details
-                                    </a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>6</td>
-                                <td>Post Six</td>
-                                <td>Health & wellness</td>
-                                <td>May 18 2018</td>
-                                <td>
-                                    <a href="details.htm" class="btn btn-secondary">
-                                        <i class="fas fa-angle-double-right"></i>Details
-                                    </a>
-                                </td>
-                            </tr>
+                          
                           </tbody>
                       </table>
+
+
+                     
+                   
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card text-center bg-primary text-white mb-3">
-                        <div class="card-body">
-                            <h3>Posts</h3>
-                            <h4 class="display-4">
-                                <i class="fas fa-pencil-alt"></i> 6
-                            </h4>
-                            <a href="posts.htm" class="btn btn-outline-light btn-sm">View</a>
-                        </div>
-                    </div>
-
-                    <div class="card text-center bg-success text-white mb-3">
-                        <div class="card-body">
-                            <h3>Categories</h3>
-                            <h4 class="display-4">
-                                <i class="fas fa-folder"></i> 4
-                            </h4>
-                            <a href="categories.htm" class="btn btn-outline-light btn-sm">View</a>
-                        </div>
-                    </div>
-
-
-                    <div class="card text-center bg-warning text-white mb-3">
-                        <div class="card-body">
-                            <h3>Users</h3>
-                            <h4 class="display-4">
-                                <i class="fas fa-users"></i> 6
-                            </h4>
-                            <a href="users.htm" class="btn btn-outline-light btn-sm">View</a>
-                        </div>
-                    </div>
-                </div>
+              
             </div>
         </div>
     </section>
@@ -398,10 +327,13 @@
 <script>
     //Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
-    CKEDITOR.replace( 'editor1' ); 
+
 </script>
 </body>
 </html>
+
+
+
 
 
 <!-- 
